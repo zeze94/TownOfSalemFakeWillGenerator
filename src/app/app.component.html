@@ -1,0 +1,20 @@
+<div style="text-align:left">
+  <h1>
+    {{ title }}!
+  </h1>
+  
+  <select (change)="changeRole($event.target.value)">
+    <option value="nr">Select Role</option>
+    <option value="sheriff">sheriff</option>
+    <option value="inves">inves</option>
+  </select>
+  <div  *ngIf = "hasRole">
+    <div>
+      Active Role : {{activeRole}}
+    </div>
+    <button (click) = "getRandWill()" > Generate Will</button>
+    <div *ngFor="let night of will">
+      <div>{{night}}</div>
+    </div>
+  </div>
+</div>
