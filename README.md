@@ -1,4 +1,4 @@
-# TownOfSalemFakeWillGenerator
+# Town Of Salem Fake Will Generator
 Currently just generating investigator and sheriff wills
 
 this is a "Only for fun" angular 2 app made just for fun, it does not have any design whatsoever
